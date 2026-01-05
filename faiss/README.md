@@ -1,1 +1,1 @@
-third part lib
+third party libs
