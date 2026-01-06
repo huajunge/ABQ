@@ -20,11 +20,8 @@ set(FAISS_SRC
   IndexFlatCodes.cpp
   IndexHNSW.cpp
   IndexIDMap.cpp
-  IndexIVF.cpp
-  IndexIVFAdditiveQuantizer.cpp
-  IndexIVFFlat.cpp
-  IndexIVFPQ.cpp
-  IndexIVFFastScan.cpp
+        IndexIVFAdditiveQuantizer.cpp
+        IndexIVFFastScan.cpp
   IndexPartitionBlockFlatSIMD.cpp
   IndexIVFAdditiveQuantizerFastScan.cpp
   IndexIVFPQFastScan.cpp

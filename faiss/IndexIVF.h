@@ -14,6 +14,7 @@
 #include <memory>
 #include <unordered_map>
 #include <vector>
+#include <mutex>
 
 #include <faiss/Clustering.h>
 #include <faiss/Index.h>
@@ -180,6 +181,7 @@ struct IndexIVF : Index, IndexIVFInterface {
 
     size_t code_size = 0; ///< code size per vector in bytes
 
+    static std::mutex stats_mutex;
     /** Parallel mode determines how queries are parallelized with OpenMP
      *
      * 0 (default): split over queries
